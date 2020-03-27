@@ -1,0 +1,184 @@
+ <Grid item xs={12} sm={2} container justify="center">
+                <FormControlLabel
+                  name="ativo"
+                  control={
+                    <Switch
+                      value={produto.ativo}
+                      color="primary"
+                      onChange= {event => this.handleChecked(event) }
+                    /> }
+                    label={ produto.ativo ? "status ativo": "status inativo"} />
+                </Grid>
+
+
+    getInitialState : function() {
+    return {data: {comments:[]}};
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <Button className={classes.buttonAddIcon}>
+                <AddIcon />
+                &nbsp;&nbsp;Adicionar complemento
+                </Button>
+
+                  <div className={classes.div}>
+                  <Grid container spacing={2} className={classes.Grid}>
+                    <Grid item xs={12} sm={10}>
+                      <TextField
+                        className={classes.textField}
+                        variant="outlined"
+                        label={"Descrição do complemento"}
+                        name="descricao"
+                        value={produto.descricao}
+                        onChange= {event => this.handleAddChange(event)}
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={2}>
+                      <Button
+                        onClick={this.handleSubmit}
+                        className={classes.buttonIcon}
+                      >
+                        {" "}
+                        <DeleteIcon />
+                        &nbsp;&nbsp;Excluir complemento
+                      </Button>
+                    </Grid>
+                    <Grid item xs={12} sm={2}>
+                      <TextField
+                        className={classes.textField}
+                        variant="outlined"
+                        label={"Qtd. min."}
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={2}>
+                      <TextField
+                        className={classes.textField}
+                        variant="outlined"
+                        label={"Máx."}
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={3} container justify="center">
+                      <FormControlLabel
+                        name= "ativo"
+                        control={
+                          <Switch
+                            value={this.state.ativo}
+                            color="primary"
+                            onChange={this.handleChecked}
+                            onChange={event =>
+                              this.setState({ ativo: event.target.value })
+                            }
+                          />
+                        }
+                        label={"Complemento obrigatório"}
+                      />
+                    </Grid>
+                  </Grid>
+                </div>
+
+                <div className={classes.div2}>
+                  <Grid container spacing={2}>
+                    <Grid item xs={12} sm={4}>
+                      <TextField
+                        className={classes.textField}
+                        variant="outlined"
+                        label={"Item do complemento"}
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                      <TextField
+                        className={classes.textField}
+                        variant="outlined"
+                        label={"Descrição"}
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={2}>
+                      <TextField
+                        className={classes.textField}
+                        variant="outlined"
+                        label={"R$"}
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={2} container justify="center">
+                      <Button
+                        onClick={this.handleSubmit}
+                        className={classes.buttonAddIcon}
+                      ><PauseCircleOutlineIcon /></Button>
+                      <Button
+                        onClick={this.handleSubmit}
+                        className={classes.buttonAddIcon}
+                      ><DeleteIcon /></Button>
+                    </Grid>
+                  </Grid>
+                  <Divider className={classes.Divider} light={true} />
+                  <Button onClick={this.handleSubmit} className={classes.buttonAddIcon}>
+                    <AddIcon />
+                    &nbsp;&nbsp;Adicionar item
+                  </Button>
+                  <Divider className={classes.Divider} light={true} />
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div className={classes.div2}>
+                  <Grid container spacing={4}>
+                  <Grid item xs={12} sm={12}/>
+                    <Grid item xs={12} sm={8}>
+                      <TextField
+                        className={classes.textField}
+                        variant="outlined"
+                        label={"Item do complemento"}
+                        name="descricao"
+                        onChange= {event => this.handleChange(event)}
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={2}>
+                      <TextField
+                        className={classes.textField}
+                        variant="outlined"
+                        label={"R$"}
+                        name="valor"
+                        onChange= {event => this.handleChange(event)}
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={1} container justify="center">
+                      <Button
+                        onClick={this.handleSubmit}
+                        className={classes.buttonAddIcon}
+                      ><AddIcon />
+                      &nbsp;&nbsp;Adicionar item</Button>
+                    </Grid>
+                    <Grid item xs={12} sm={1} container justify="center">
+                      <Button
+                        onClick={this.handleSubmit}
+                        className={classes.buttonAddIcon}
+                      ><DeleteIcon /></Button>
+                    </Grid>
+                  </Grid>
+                  <Divider className={classes.Divider} light={true} />
+                </div>

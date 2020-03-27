@@ -1,0 +1,40 @@
+          <Grid container spacing={2} className={classes.Grid}>
+            <Grid item  sm={2}>
+              <TextField
+                    className={classes.textField}
+                    variant="outlined"
+                    label={"Nº Pedido"}
+              />
+            </Grid>
+            <Grid item  sm={1}>
+              <TextField
+                    className={classes.textField}
+                    variant="outlined"
+                    label={"Mesa"}
+              />
+            </Grid>
+            <Grid item  sm={4}>
+              <TextField
+                    className={classes.textField}
+                    variant="outlined"
+                    label={"Nome"}
+              />
+            </Grid>
+            <Grid item sm={2}> 
+            <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                <DateTimePicker
+                    margin="normal"
+                    className={classes.textField}
+                    inputVariant="outlined"
+                    label="Data e hora"
+                />
+            </MuiPickersUtilsProvider>
+            </Grid>
+            <Grid item sm={2}> 
+            <Button
+                onClick={this.handleSubmit}
+                className={classes.buttonPrincipal}
+                >FAZER PESQUISA
+            </Button>
+            </Grid>
+          </Grid>

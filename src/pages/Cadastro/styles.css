@@ -1,0 +1,16 @@
+.actions Button {
+    background: "#253257"!important;
+}
+
+.MuiPaper-elevation2 {
+    box-shadow: 0px 0px 0px 0px !important;
+}
+.MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #989898 !important;
+}
+
+.MuiListItem-root {
+    text-transform: unset;
+}

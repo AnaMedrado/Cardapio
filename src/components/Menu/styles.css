@@ -1,0 +1,28 @@
+.MuiPaper-elevation0 {
+    background-color: #F2C26A !important;
+    color: #253257 !important;
+}
+
+.MuiListItem-root {
+    font-family: roboto;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.MuiButton-root {
+    line-height: 1.2 !important;
+    letter-spacing: 0.0em !important;
+    text-transform: none !important;
+}
+
+a:-webkit-any-link {
+    color: #253257;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    text-decoration-style: none !important;
+    text-decoration-color: none !important;
+}
+
+.MuiAppBar-colorPrimary {
+    background-image: url(../../imagens/1234.png);
+} 

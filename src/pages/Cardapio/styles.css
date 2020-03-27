@@ -1,0 +1,32 @@
+.MuiExpansionPanelDetails-root {
+    display: block !important;
+}
+
+.MuiDialog-scrollPaper {
+    align-items: inherit !important;
+    justify-content: center !important;
+}
+
+.MuiPaper-elevation24 {
+    background-image: url(../../imagens/fundo01.svg) ;
+}
+
+.react-tabs__tab--selected {
+    background: transparent !important; 
+    border-color: transparent !important; 
+}
+
+.MuiExpansionPanel-rounded {
+    margin-bottom: 10px !important;
+    border-bottom-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+
+}
+
+.MuiDialog-paper {
+    margin: 5% !important;
+}
+
+.MuiDialog-paperWidthSm {
+    min-width: 800px;
+}
